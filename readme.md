@@ -1,9 +1,9 @@
-# Example of relational data model being handled without relations in DynamoDB
+# Example of a relational data model being handled without relations in DynamoDB
 
 Imagine we are designing a simple workout tracking app. Users would be able to log their workouts and see their progress over time. The app would have the following features:
 
 1. Add a new workout type for a user (E.g. running, swimming, lifting, climbing, etc)
-2. Log a new workout for a user
+2. Log a new workout for a user for a specific type
 3. Query all workout types for a user
 4. Query all workouts for a user
 5. Query workouts for a user by type
