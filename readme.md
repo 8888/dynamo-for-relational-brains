@@ -89,3 +89,6 @@ response = table.query(
     }
 )
 ```
+
+### What makes this work?
+The composite sort key and using `begins_with` in the query allows us to store and retrieve different types of data entries in a single table. We do not want to take a different approach of filtering the data after retrieval as it is inefficient and costly in terms of read capacity units since it will read the entire table then filter. Instead, we use DynamoDB's query capabilities to efficiently retrieve the desired data based on the sort key pattern.
